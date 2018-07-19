@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto');
+
+/* -------- Base element styles mobile and up------------*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #e7eade;
+  font-size: 1.25rem;
+  padding: 40px 0px 20px 0px;
+  text-align: center;
+}
+
+p {
+  color: #e7eade;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+/* -------- Main Banner section styles ------------*/
+.main-banner {
+  background: url(img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent !important;
+}
+
+.overlay {
+  background: rgba(63, 57, 77, 0.3);
+  width: 100vw;
+  height: 100vh;
+}
+
+.showcase {
+  padding-top: 200px;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+}
+
+.showcase h1 {
+  margin: 20px 0px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.showcase h3 {
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+button.btn {
+  background: coral;
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 0.9rem 2rem;
+  margin: 40px;
+  font-weight: 600;
+}
+
+
+/* -------- Navigation styles mobile ------------*/
+.menu-toggle-button {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.main-logo {
+  margin-right: auto;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 20px;
+  background-color: transparent !important;
+}
+
+li {
+  margin: 10px 20px;
+}
+
+/* -------- About section styles mobile------------*/
+.about {
+  background: #b7baad;
+  height: 1200px;
+}
+
+/* -------- Examples section styles mobile------------*/
+.examples {
+  background: #a0a396;
+  padding-bottom: 700px;
+}
+
+/* -------- Pricing section styles mobile------------*/
+.pricing {
+  background:#838778;
+  padding-bottom: 700px;
+}
+
+/* -------- Contact section styles mobile------------*/
+.contact {
+  background:#696d5f;
+  padding-bottom: 700px;
+}
+
+
+@media (min-width: 576px){
+  /* -------- Base element styles ------------*/
+  h2 {
+    font-size: 2.5rem;
+    padding: 50px;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  /* -------- Navigation styles ------------*/
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .menu-toggle-button {
+    display: none;
+  }
+
+  /* -------- Main Banner section styles ------------*/
+  .showcase {
+    padding-top: 200px;
+  }
+
+  .showcase h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+
+  .showcase h3 {
+    font-size: 1.3rem;
+  }
+
+  button.btn {
+    background: coral;
+    font-size: 1.4rem;
+    padding: 0.9rem 2rem;
+    font-weight: 600;
+  }
+
+  /* -------- About section styles ------------*/
+
+  .about-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
