@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Höppner</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 </head>
 <body>
@@ -20,18 +20,35 @@
             <div class="menu-toggle-button">
               <i class="fas fa-bars"></i>
             </div>
-            <ul class="nav-links">
+            <ul class="nav-links-mobile">
               <li>
-                <a href="#about">About</a>
+                <a href="#about" class="mobileLink">About</a>
               </li>
               <li>
-                <a href="#examples">Examples</a>
+                <a href="#pricing" class="mobileLink">Pricing</a>
+              </li>
+              <li>
+                <a href="#examples" class="mobileLink">Examples</a>
+              </li>
+              <li>
+                <a href="#signup" class="signup-btn mobileLink">Sign Up</a>
+              </li>
+              <li>
+                <a href="#contact" class="mobileLink">Contact</a>
+              </li>
+            </ul>
+            <ul class="nav-links-desktop">
+              <li>
+                <a href="#about">About</a>
               </li>
               <li>
                 <a href="#pricing">Pricing</a>
               </li>
               <li>
-                <a href="#signup">Sign Up</a>
+                <a href="#examples">Examples</a>
+              </li>
+              <li>
+                <a href="#signup" class="signup-btn">Sign Up</a>
               </li>
               <li>
                 <a href="#contact">Contact</a>
@@ -43,7 +60,7 @@
       <div class="showcase">
         <h1>Premium Stock Photos</h1>
         <h3>More than 30,000 photos to choose from.</h3>
-        <button class="btn">Sign Up</button>
+        <button class="btn signup-btn">Sign Up</button>
       </div>
     </div>
   </header>
@@ -62,7 +79,25 @@
           If subscriptions aren't your thing, we also pride images for a one off fee. Höppner will be launching in late 2018, but you're welcome to sign up now!</p>
         </div>
         <div class="mockup-img">
-          <img src="img/mockup.png" alt="">
+          <img src="img/mock-up-phone.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="pricing" class="pricing scrollspy">
+    <div class="container">
+      <h2>Pricing</h2>
+      <div class="pricing-info">
+        <div class="pricing-paragraph">
+          <p> At Höppner, we have multiple pricing options to suit your needs. Pricing starts from
+            $5 per photo, but gets cheaper per
+            photo the more you buy in the same transaction. We also offer a highly affordable
+            subscription package for developers
+          that will be using our service frequently. The subsciption option offer features
+          unlimited photos for $20 per month.</p>
+        </div>
+        <div class="pricing-pic-div">
+          <img class="pricing-pic" src="img/mockup.png" alt="">
         </div>
       </div>
     </div>
@@ -70,99 +105,121 @@
   <section id="examples" class="examples scrollspy">
     <h2>Examples</h2>
     <div class="examples-container">
-    <div id="modal" class="modal">
-      <div class="modal-container">
-        <img id="current" src="" alt="">
-      </div>
+      <div class="imgs">
+        <div class="img-container">
+          <img src="img/grid1.jpeg" alt="">
+          <div class="photo-overlay">
+            <h2>Click to enlarge</h2>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="img/grid2.jpeg" alt="">
+          <div class="photo-overlay">
+            <h2>Click to enlarge</h2>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="img/grid3.jpeg" alt="">
+          <div class="photo-overlay">
+            <h2>Click to enlarge</h2>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="img/grid4.jpeg" alt="">
+          <div class="photo-overlay">
+            <h2>Click to enlarge</h2>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="img/grid5.jpeg" alt="">
+          <div class="photo-overlay">
+            <h2>Click to enlarge</h2>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="img/grid6.jpeg" alt="">
+          <div class="photo-overlay">
+            <h2>Click to enlarge</h2>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="img/grid7.jpeg" alt="">
+          <div class="photo-overlay">
+            <h2>Click to enlarge</h2>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="img/grid8.jpeg" alt="">
+          <div class="photo-overlay">
+            <h2>Click to enlarge</h2>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="img/grid9.jpeg" alt="">
+          <div class="photo-overlay">
+            <h2>Click to enlarge</h2>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="img/grid10.jpeg" alt="">
+          <div class="photo-overlay">
+            <h2>Click to enlarge</h2>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="img/grid11.jpeg" alt="">
+          <div class="photo-overlay">
+            <h2>Click to enlarge</h2>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="img/grid12.jpeg" alt="">
+          <div class="photo-overlay">
+            <h2>Click to enlarge</h2>
+          </div>
+        </div>
     </div>
-    <div class="imgs">
-      <div class="img-container">
-        <img src="img/grid1.jpeg" alt="">
-        <div class="photo-overlay">
-          <h2>Click to enlarge</h2>
-        </div>
-      </div>
-      <div class="img-container">
-        <img src="img/grid2.jpeg" alt="">
-        <div class="photo-overlay">
-          <h2>Click to enlarge</h2>
-        </div>
-      </div>
-      <div class="img-container">
-        <img src="img/grid3.jpeg" alt="">
-        <div class="photo-overlay">
-          <h2>Click to enlarge</h2>
-        </div>
-      </div>
-      <div class="img-container">
-        <img src="img/grid4.jpeg" alt="">
-        <div class="photo-overlay">
-          <h2>Click to enlarge</h2>
-        </div>
-      </div>
-      <div class="img-container">
-        <img src="img/grid5.jpeg" alt="">
-        <div class="photo-overlay">
-          <h2>Click to enlarge</h2>
-        </div>
-      </div>
-      <div class="img-container">
-        <img src="img/grid6.jpeg" alt="">
-        <div class="photo-overlay">
-          <h2>Click to enlarge</h2>
-        </div>
-      </div>
-      <div class="img-container">
-        <img src="img/grid7.jpeg" alt="">
-        <div class="photo-overlay">
-          <h2>Click to enlarge</h2>
-        </div>
-      </div>
-      <div class="img-container">
-        <img src="img/grid8.jpeg" alt="">
-        <div class="photo-overlay">
-          <h2>Click to enlarge</h2>
-        </div>
-      </div>
-      <div class="img-container">
-        <img src="img/grid9.jpeg" alt="">
-        <div class="photo-overlay">
-          <h2>Click to enlarge</h2>
-        </div>
-      </div>
-      <div class="img-container">
-        <img src="img/grid10.jpeg" alt="">
-        <div class="photo-overlay">
-          <h2>Click to enlarge</h2>
-        </div>
-      </div>
-      <div class="img-container">
-        <img src="img/grid11.jpeg" alt="">
-        <div class="photo-overlay">
-          <h2>Click to enlarge</h2>
-        </div>
-      </div>
-      <div class="img-container">
-        <img src="img/grid12.jpeg" alt="">
-        <div class="photo-overlay">
-          <h2>Click to enlarge</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-  </section>
-  <section id="pricing" class="pricing scrollspy">
-    <h2>Pricing</h2>
-
-  </section>
-  <section id="signup" class="signup scrollspy">
-    <h2>Sign Up</h2>
-
   </section>
   <section id="contact" class="contact scrollspy">
     <h2>Contact</h2>
-
+    <div class="contact-info">
+      <p>
+        We'd love to hear from you! Send your details below and we will be in touch.
+        <br>
+        <br>
+        Or just say hello to <span>hello@hoppner.com</span>
+      </p>
+    </div>
+    <form class="contactForm">
+      <label for="contactName">Name</label>
+      <input type="text" id="contactName" class="input-field">
+      <label for="contactEmail">Email</label>
+      <input type="text" id="contactEmail" class="input-field">
+      <label for="contactMessage">Message</label>
+      <textarea name="contactMessage" id="contactMessage" class="input-field" cols="30" rows="5"></textarea>
+      <input id="contactSubmit" type="submit" value="Submit">
+    </form>
   </section>
+  <div id="modal" class="modal">
+    <div class="examples-modal-container">
+        <img id="current" src="" alt="">
+      </div>
+    <form class="signup-form">
+      <h3>Sign Up</h3>
+      <label for="signupName">Name</label>
+      <input type="text" name="signupName" id="signupName" class="input-field">
+      <label for="signupEmail">Email</label>
+      <input type="email" name="signupEmail" id="signupEmail" class="input-field">
+      <label for="signupPassword">Password</label>
+      <input type="password" name="signupPassword" id="signupPassword" class="input-field">
+      <label for="signupConfirmPassword">Confirm Password</label>
+      <input type="password" name="signupConfirmPassword" id="signupConfirmPassword" class="input-field">
+      <input class="confirm-signup" type="submit" value="Sign Up">
+    </form>
+    <div class="thank-you-message">
+      <!-- insert thank you message after form completion. -->
+    </div>
+  </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script src="app.js"></script>

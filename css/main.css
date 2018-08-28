@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+/* -------- Base element styles mobile and up------------*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+.input-error {
+  border: rgba(238, 85, 75, 0.8) solid 2px; }
+
+.error-text {
+  color: rgba(238, 85, 75, 0.8) !important;
+  font-size: 0.8rem; }
+
+.fa-times {
+  font-size: 1.3rem; }
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none; }
+
+button:focus, input:focus, textarea:focus {
+  outline: none; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.black {
+  background: #0000; }
+
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+form input, form textarea {
+  margin-bottom: 25px;
+  margin: 10px 0px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  font-size: 1rem;
+  padding: 1.1rem; }
+
+form h3 {
+  font-size: 1.7rem;
+  margin-bottom: 30px;
+  text-align: center; }
+
+h2 {
+  color: #e7eade;
+  font-size: 1.25rem;
+  padding: 40px 0px 20px 0px;
+  text-align: center; }
+
+p {
+  color: #e7eade;
+  font-size: 1rem;
+  line-height: 1.4rem; }
+
+.mockup-1, .mockup-2 {
+  opacity: 0; }
+
+#about, #examples, #pricing, #signup, #contact {
+  padding-top: 50px; }
+
+/* -------- Main Banner section styles ------------*/
+.main-banner {
+  background: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%; }
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 18; }
+
+.overlay {
+  background: rgba(63, 57, 77, 0.3);
+  width: 100vw;
+  height: 100vh; }
+
+.showcase {
+  padding-top: 200px;
+  flex-direction: column;
+  text-align: center;
+  color: #fff; }
+  .showcase h1 {
+    margin: 20px 0px;
+    font-size: 1.8rem;
+    font-weight: 600; }
+  .showcase h3 {
+    font-weight: 100;
+    font-size: 0.8rem; }
+
+button.btn {
+  background: #ff7f50;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  color: #fff;
+  padding: 0.9rem 2rem;
+  margin: 40px;
+  font-weight: 600;
+  transition: all 0.2s linear; }
+
+button.btn:hover {
+  background: #ea6f41; }
+
+/* -------- Navigation styles mobile ------------*/
+.menu-toggle-button {
+  color: #fff;
+  font-size: 1.2rem;
+  padding-bottom: 5px; }
+
+.main-logo {
+  margin-right: auto;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600; }
+
+.nav-links-mobile {
+  background: #c0c0c0;
+  margin: 0px;
+  height: 100vh;
+  width: 180px;
+  position: absolute;
+  top: 0px;
+  left: -180px;
+  list-style: none;
+  transition: 0.2s linear; }
+  .nav-links-mobile li {
+    margin: 35px 20px; }
+
+.nav-links-mobile.active {
+  left: 0px; }
+
+.nav-links-desktop {
+  list-style: none;
+  display: none; }
+  .nav-links-desktop li {
+    margin: 10px 20px; }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 0px 8px 0px; }
+
+/* -------- Modal styles mobile------------*/
+.signup-form {
+  animation-name: modalopen;
+  animation-duration: 0.3s;
+  background: #f4f7f8;
+  border-radius: 8px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  display: none;
+  margin: 70px auto;
+  padding: 40px 30px;
+  position: relative;
+  width: 80%;
+  z-index: 21; }
+  .signup-form input {
+    background-color: #e8eeef;
+    width: 100%; }
+  .signup-form .confirm-signup {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background: #55b955;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    height: 50px;
+    margin-top: 20px;
+    transition: all 0.2s linear;
+    width: 100%; }
+
+.confirm-signup:hover {
+  background: #47ad47; }
+
+.thank-you-message {
+  background: #f4f7f8;
+  border-radius: 8px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  display: none;
+  width: 90%;
+  z-index: 22;
+  margin: auto;
+  padding: 45px;
+  position: absolute;
+  top: 20%;
+  left: 5%; }
+  .thank-you-message p {
+    text-align: center;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    color: #4d5144;
+    font-weight: 300; }
+  .thank-you-message i {
+    position: absolute;
+    font-size: 1.8rem;
+    color: #A9A9A9;
+    cursor: pointer;
+    top: 15px;
+    right: 20px; }
+
+/* -------- About section styles mobile------------*/
+.about {
+  background: #9ca090;
+  padding-bottom: 100px; }
+
+.about-info {
+  font-weight: 300; }
+
+.mockup-img {
+  margin: 15px auto;
+  height: 340px;
+  width: 340px; }
+  .mockup-img img {
+    width: 100%; }
+
+/* -------- Pricing section styles mobile------------*/
+.pricing {
+  background: #838778;
+  padding-bottom: 200px;
+  margin: auto; }
+
+.pricing-info {
+  font-weight: 300;
+  width: 90%;
+  margin: auto; }
+
+.pricing-pic {
+  height: 340px;
+  width: 340px; }
+  .pricing-pic img {
+    width: 100%; }
+
+/* -------- Examples section styles mobile------------*/
+.examples {
+  background: #a0a396;
+  padding-bottom: 200px; }
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.examples-modal-container {
+  margin: 5% auto;
+  width: 100%;
+  height: 80%;
+  display: flex; }
+  .examples-modal-container img {
+    max-width: 300px;
+    margin: auto;
+    animation-name: modalopen;
+    animation-duration: 1s; }
+
+.examples-container {
+  width: 90%;
+  margin: auto; }
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  cursor: pointer;
+  margin-top: 20px; }
+  .imgs img {
+    width: 100%;
+    height: 75px;
+    box-shadow: 5px 5px 2px rgba(40, 62, 80, 0.2); }
+
+.photo-overlay {
+  opacity: 0;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.45);
+  transition: opacity 0.3s linear; }
+
+.photo-overlay:hover {
+  opacity: 1; }
+
+.photo-overlay h2 {
+  display: none; }
+
+.img-container {
+  position: relative; }
+
+@keyframes modalopen {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* -------- Contact section styles mobile------------*/
+.contact {
+  background: #4d5144;
+  padding-bottom: 200px;
+  color: #e7eade;
+  font-size: 1.1rem;
+  font-weight: 300; }
+  .contact span {
+    color: #f2f9d6;
+    font-weight: 600; }
+  .contact .contact-info {
+    margin: 8px auto 25px auto;
+    width: 70%; }
+  .contact .contactForm {
+    display: flex;
+    flex-direction: column; }
+    .contact .contactForm input, .contact .contactForm textarea {
+      background-color: #e7eade; }
+    .contact .contactForm input[type="submit"] {
+      background: #98a571;
+      color: #e7eade;
+      font-size: 1.5rem;
+      margin-top: 20px; }
+    .contact .contactForm label {
+      color: #e7eade; }
+    .contact .contactForm input, .contact .contactForm textarea, .contact .contactForm label {
+      width: 70%;
+      margin: 8px auto; }
+
+@media (min-width: 650px) {
+  /* -------- Base element styles medium screens and up ------------*/
+  h2 {
+    font-size: 2.5rem;
+    padding: 50px; }
+  p {
+    font-size: 1.6rem;
+    line-height: 2.3rem; }
+  form h3 {
+    font-size: 1.8rem; }
+  form input {
+    padding: 1.1rem;
+    margin-bottom: 1rem; }
+  /* -------- Navigation styles medium screens and up ------------*/
+  .nav-links-mobile {
+    display: none; }
+  .nav-links-desktop {
+    display: flex;
+    flex-direction: row;
+    margin: 0; }
+  .menu-toggle-button {
+    display: none; }
+  /* -------- Main Banner section styles medium screens and up ------------*/
+  .showcase {
+    padding-top: 200px; }
+    .showcase h1 {
+      font-size: 2.8rem;
+      font-weight: 600; }
+    .showcase h3 {
+      font-size: 1.3rem; }
+  button.btn {
+    background: coral;
+    font-size: 1.4rem;
+    padding: 0.9rem 2rem;
+    font-weight: 600; }
+  /* -------- Modal styles medium screens and up ------------*/
+  .signup-form {
+    padding: 40px 50px;
+    width: 60%; }
+    .signup-form .confirm-signup {
+      font-size: 1.5rem;
+      height: 60px; }
+  .thank-you-message {
+    padding: 55px;
+    width: 60%;
+    left: 20%; }
+    .thank-you-message p {
+      font-size: 2rem; }
+  /* -------- About section styles medium screens and up ------------*/
+  .about-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-weight: 300; }
+  .mockup-img {
+    height: 400px;
+    width: 400px;
+    margin: -35px auto; }
+  /* -------- Pricing section styles medium screens and up ------------*/
+  .pricing-pic {
+    height: 450px;
+    width: 450px; }
+  /* -------- Examples section styles medium screens and up ------------*/
+  .examples-container {
+    width: 80%; }
+  .examples-modal-container img {
+    max-height: 100%;
+    max-width: 100%; }
+  .imgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    cursor: pointer;
+    margin-top: 20px; }
+    .imgs img {
+      width: 100%;
+      height: 190px;
+      box-shadow: 5px 5px 2px rgba(40, 62, 80, 0.2); }
+  .photo-overlay h2 {
+    display: block;
+    font-size: 1.5rem; } }
+
+@media (min-width: 992px) {
+  .pricing-info {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    font-weight: 300; }
+  .pricing-pic {
+    margin-top: -100px;
+    margin-left: 50px; }
+  .mockup-img {
+    height: 500px;
+    width: 500px; }
+  .signup-form {
+    width: 45%; } }

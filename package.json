@@ -1,0 +1,23 @@
+{
+  "name": "hoppner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jolyon-meibusch/hoppner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jolyon-meibusch/hoppner/issues"
+  },
+  "homepage": "https://github.com/jolyon-meibusch/hoppner#readme",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
